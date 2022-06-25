@@ -20,6 +20,7 @@ export default function Header() {
             src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
             layout='fill'
             className='object-contain'
+            priority ='true'
           />
         </div>
       {/* middle */}
