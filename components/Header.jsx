@@ -40,7 +40,7 @@ export default function Header() {
          <PlusCircleIcon 
           className='h-5 cursor-pointer hover:scale-125 transition-transform-200 duration-200 ease-out'
            />
-           <img src=" https://islamyearul.xyz/wp-content/uploads/2022/04/Yearul-PP-2-Pic-2022.jpg" alt="user image" 
+           <img src="https://islamyearul.xyz/wp-content/uploads/2022/04/Yearul-PP-2-Pic-2022.jpg" alt="user image" 
            className='h-10 rounded-full'/>
         </div>
       </div>
