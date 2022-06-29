@@ -1,8 +1,12 @@
 import React from 'react'
 import Image from 'next/image';
 import { HomeIcon, PlusCircleIcon, SearchIcon } from '@heroicons/react/outline';
+import { useSession, signIn, signOut } from 'next-auth/react';
+
 
 export default function Header() {
+  const {data: session}= useSession();;
+  
   return (
     <div className="shadow-sm border-b sticky top-0 bg-white z-30">
           <div>
@@ -37,11 +41,19 @@ export default function Header() {
         <HomeIcon 
          className='hidden md:inline-flex h-5 cursor-pointer hover:scale-125 transition-transform-200 duration-200 ease-out'
          />
-         <PlusCircleIcon 
+         {session ? (
+          <>
+          <PlusCircleIcon 
           className='h-5 cursor-pointer hover:scale-125 transition-transform-200 duration-200 ease-out'
            />
-           <img src="https://islamyearul.xyz/wp-content/uploads/2022/04/Yearul-PP-2-Pic-2022.jpg" alt="user image" 
+           <img src={session.user.image} alt="user image" 
+           onClick={signOut}
            className='h-10 rounded-full'/>
+          </>
+         ):(
+          <button onClick={signIn}>Sign in</button>
+         )}
+         
         </div>
       </div>
  

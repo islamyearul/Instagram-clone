@@ -9,7 +9,7 @@ export default function MiniProfile() {
         <h2 className='font-bold '>Islam Yearul</h2>
         <h3 className='text-sm text-gray-400  '>Welcome to instagram</h3>
       </div>
-      <button className='font-semibold text-blue-400 text-sm'>Sin out</button>
+      <button className='font-semibold text-blue-400 text-sm'>Sign out</button>
 
     </div>
   )
