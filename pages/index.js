@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Feed from '../components/Feed'
 import Header from '../components/Header'
+import UploadModal from '../components/UploadModal'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -20,8 +21,8 @@ export default function Home() {
       
       <Feed />
 
-      {/* Miodal */}
-
+      {/* Modal */}
+      <UploadModal/>
 
     </div>
   )

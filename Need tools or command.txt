@@ -1,1 +1,1 @@
-Next Js, Tailwind Css, minifaker, pravatar, Next auth , Firebase, Cloud Google
+Next Js, Tailwind Css, minifaker, pravatar, Next auth , Firebase, Cloud Google, recoil js,
